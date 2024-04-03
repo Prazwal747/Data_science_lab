@@ -7,7 +7,7 @@ library(graphics)
 library(grid)
 library(gridExtra)
 #import the student grades
-grade_input=as.data.frame(read.csv("C:/users/HP/Desktop/grades_km_input.csv"))
+grade_input=as.data.frame(read.csv("c:/Users/Admin/Desktop/PrajwalSM_DSA/grades_km_input.csv"))
 kmdata_orig=as.matrix(grade_input[,c("Student","English","Math","Science")])
 kmdata<-kmdata_orig[,2:4]
 kmdata[1:10,]
@@ -38,3 +38,4 @@ tmp = ggplot_gtable(ggplot_build(g1))
 library(grid)
 library(gridExtra)
 grid.arrange(g1,g2,g3,ncol=1,top="High School Student Cluster Analysis")
+
